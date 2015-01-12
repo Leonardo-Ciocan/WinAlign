@@ -54,5 +54,30 @@ namespace WinAlign
         {
             this.Opacity = Math.Min(0.1, this.Opacity + e.Delta);
         }
+
+        private void keyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                if (image.Source != null)
+                {
+                    image.Source = null;
+                    this.Width = 450;
+                    this.Height = 450;
+                }
+            }
+            if ( (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                if (e.Key == Key.OemPlus)
+                {
+                    this.Opacity = Math.Min(1, this.Opacity + 0.05);
+                }
+                else if (e.Key == Key.OemMinus)
+                {
+                    this.Opacity = Math.Max(0.1, this.Opacity -0.05);
+
+                }
+            }
+        }
     }
 }

@@ -1,12 +1,12 @@
 ﻿<Window x:Class="WinAlign.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525" AllowsTransparency="True" WindowStyle="None" Opacity="0.8" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="Transparent">
-    <Grid MouseLeftButtonDown="mouseDown" Drop="dropped" AllowDrop="True">
+        Title="MainWindow" Height="450" Width="450" AllowsTransparency="True" WindowStyle="None" Opacity="0.8" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="Transparent" KeyUp="keyUp">
+    <Grid MouseLeftButtonDown="mouseDown" Drop="dropped" AllowDrop="True" >
         
         <Rectangle Fill="LightGray" Stroke="#FFA4A4A4" RadiusX="5" RadiusY="5" ></Rectangle>
         <TextBlock Text="" FontFamily="Segoe UI Symbol" FontSize="18" Margin="7,5,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF282828" MouseLeftButtonUp="closeDown" ></TextBlock>
         <TextBlock Text="Drop any image here" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Light" FontSize="40"></TextBlock>
-        <Image x:Name="image"></Image>
+        <Image x:Name="image" IsHitTestVisible="False"></Image>
     </Grid>
 </Window>
