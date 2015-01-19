@@ -6,7 +6,19 @@
         
         <Rectangle Fill="LightGray" Stroke="#FFA4A4A4" RadiusX="5" RadiusY="5" ></Rectangle>
         <TextBlock Text="" FontFamily="Segoe UI Symbol" FontSize="18" Margin="7,5,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF282828" MouseLeftButtonUp="closeDown" ></TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Path Data="M19.712,20.551L28.039999,28.446855 24.602834,28.776956 27.048252,33.898092 25.032055,34.955999 22.654241,29.735964 19.712,31.983379z M6.4025176,3.84L21.208582,3.84C22.624092,3.8399998,23.772999,4.9858878,23.772999,6.4025874L23.772999,22.496357 18.07376,17.09072 18.07376,28.610998 6.4025176,28.610998C4.9877176,28.610998,3.8399997,27.463789,3.84,26.048481L3.84,6.4025874C3.8399997,4.9858878,4.9877176,3.8399998,6.4025176,3.84z M6.4024458,0L17.494389,0C17.494389,0,18.75351,0.78771353,17.494389,1.9198742L6.4024458,1.9198742C3.9309749,1.9198742,1.9199517,3.9309078,1.9199518,6.4023874L1.9199518,21.308426C1.9199517,21.308426,0.99879551,22.331217,0,21.308426L0,6.4023874C0,2.8717064,2.8718774,0,6.4024458,0z" Stretch="Uniform" Fill="#FF0D0D0D" Width="138" Height="138" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <TransformGroup.Children>
+                        <RotateTransform Angle="0" />
+                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                    </TransformGroup.Children>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
         <TextBlock Text="Drop any image here" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Light" FontSize="40"></TextBlock>
+        </StackPanel>
         <Image x:Name="image" IsHitTestVisible="False"></Image>
     </Grid>
 </Window>
